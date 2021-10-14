@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dockers",
+  "info": {
+    "name": "docker"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "pull_count": {
+      "type": "integer"
+    },
+    "updated_on": {
+      "type": "datetime"
+    }
+  }
+}

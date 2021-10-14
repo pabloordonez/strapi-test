@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "name": "test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "rich_text": {
+      "type": "richtext"
+    },
+    "number": {
+      "type": "decimal"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "boolean": {
+      "type": "boolean"
+    },
+    "blog_posts": {
+      "collection": "blog-post",
+      "via": "test"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "enumeration": {
+      "type": "enumeration",
+      "enum": [
+        "value1",
+        "value2",
+        "value3",
+        "value4"
+      ]
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "json": {
+      "type": "json"
+    },
+    "ui": {
+      "type": "uid"
+    },
+    "dynamic_zone": {
+      "type": "dynamiczone",
+      "components": []
+    }
+  }
+}
