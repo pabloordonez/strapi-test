@@ -1,52 +1,60 @@
 {
-  "routes": [
-    {
-      "method": "GET",
-      "path": "/dockers",
-      "handler": "docker.find",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/dockers/count",
-      "handler": "docker.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/dockers/:id",
-      "handler": "docker.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/dockers",
-      "handler": "docker.create",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "PUT",
-      "path": "/dockers/:id",
-      "handler": "docker.update",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "DELETE",
-      "path": "/dockers/:id",
-      "handler": "docker.delete",
-      "config": {
-        "policies": []
-      }
-    }
-  ]
+    "routes": [
+        {
+            "method": "GET",
+            "path": "/dockers/bydate/from/:from/to/:to",
+            "handler": "docker.findByDate",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/dockers",
+            "handler": "docker.find",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/dockers/count",
+            "handler": "docker.count",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/dockers/:id",
+            "handler": "docker.findOne",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/dockers",
+            "handler": "docker.create",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "PUT",
+            "path": "/dockers/:id",
+            "handler": "docker.update",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/dockers/:id",
+            "handler": "docker.delete",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
 }

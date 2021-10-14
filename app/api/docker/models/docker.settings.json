@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "dockers",
   "info": {
-    "name": "docker"
+    "name": "docker",
+    "description": ""
   },
   "options": {
     "increments": true,
